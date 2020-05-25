@@ -1,0 +1,98 @@
+body {
+    background-image: url('/img/fundo.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.quiz {
+    height: 80vh;
+    width: 85vw;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.562);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quiz .pergunta {
+    padding: 20px;
+    background-color: rgb(15, 133, 0);
+    border-radius: 8px;
+    color:white;
+    font-size: 23px;
+    width: 100%;
+}
+
+.quiz .opcoes ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quiz .opcoes ul li {
+    display: inline-block;
+    background-color: rgb(6, 184, 0);
+    width: 48%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+}
+
+.quiz .opcoes ul li:hover {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.quiz .resultado {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.quiz .resultado .botao {
+    margin: auto;
+    margin-top: 12vh;
+}
+
+.quiz .resultado .botao button {
+    padding: 3vh;
+    border: none;
+    background-color: rgb(68, 205, 50);
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.295);
+}
+
+.quiz .resultado .botao button:hover {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.quiz .resultado .pontuacao {
+    margin: auto;
+    margin-top: 15vh;
+    color: black;
+    font-size: 20px;
+}
+
+.quiz .resultado .pontuacao span {
+    background-color: rgb(15, 133, 0);
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+}
