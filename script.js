@@ -1,9 +1,11 @@
 var caixapontuacao = document.getElementById('pontuacao')
 var caixapergunta = document.getElementById('pergunta')
+var ul = document.getElementById('ul')
 var op1 = document.getElementById('op1')
 var op2 = document.getElementById('op2')
 var op3 = document.getElementById('op3')
 var op4 = document.getElementById('op4')
+var botaoproximo = document.getElementById('botao')
 
 
 var quiz = {
@@ -23,7 +25,7 @@ var quiz = {
             opcoes: [
                 'op1',
                 'op2',
-                'op3',
+                'essa é a resposta',
                 'op4'
             ],
             resposta: 3
@@ -40,6 +42,7 @@ function load() {
     op2.innerText = quiz.perguntas[perguntaatual].opcoes[1]
     op3.innerText = quiz.perguntas[perguntaatual].opcoes[2]
     op4.innerText = quiz.perguntas[perguntaatual].opcoes[3]
+    botaoproximo.disabled = true
 }
 window.onload = load()
 
@@ -47,13 +50,26 @@ function opcao(ele) {
     if (ele == quiz.perguntas[perguntaatual].resposta) {
         pontuacao += 10
         caixapontuacao.innerText = pontuacao
+
+
     }
-    
+
+
+    for (let i = 0; i < ul.children.length; i++) {
+        ul.children[i].style.pointerEvents = "none";
+    }
+
+    botaoproximo.disabled = false
+
 }
 
+
 function proxima() {
-    perguntaatual ++
+    perguntaatual++
     load()
+    for (let i = 0; i < ul.children.length; i++) {
+        ul.children[i].style.pointerEvents = "auto";
+    }
 }
 
 
