@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,41 +10,12 @@
 </head>
 
 <body>
-
-    <h1>Quiz LGPD</h1>
-
-    <div class="quiz">
-        <div class="pergunta" id="pergunta">
-            <!--Aqui vai a pergunta-->
-        </div>
-
-        <div class="opcoes">
-            <ul id ="ul">
-                <li id="op1" onclick="opcao(1)">
-                    <!--1ª opção-->
-                </li>
-                <li id="op2" onclick="opcao(2)">
-                    <!--2ª opção-->
-                </li>
-                <li id="op3" onclick="opcao(3)">
-                    <!--3ª opção-->
-                </li>
-                <li id="op4" onclick="opcao(4)">
-                    <!--4ª opção-->
-                </li>
-            </ul>
-        </div>
-
-        <div class="resultado">
-            <div class="pontuacao">
-                Sua pontução:<span id="pontuacao">0</span>
-            </div>
-            <div class="botao">
-                <button id="botao" onclick="proxima()">Próxima questão</button>
-            </div>
-        </div>
+    <h1>Seja bem-vindo ao quiz LGPD</h1>
+    <h2>Faça um pequeno teste para avaliar seu conhecimento sobre a LGPD</h2>
+    <div class="inicio">
+        <button id="iniciar" onclick="window.location='perguntas.html'">Começar teste</button>
+        <button>Instruções</button>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

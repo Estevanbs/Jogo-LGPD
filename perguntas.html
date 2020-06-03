@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz LGPD</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Quiz LGPD</h1>
+
+    <div class="quiz">
+        <div class="pergunta" id="pergunta">
+            <!--Aqui vai a pergunta-->
+        </div>
+
+        <div class="opcoes">
+            <ul id ="ul">
+                <li id="op1" onclick="opcao(1)">
+                    <!--1ª opção-->
+                </li>
+                <li id="op2" onclick="opcao(2)">
+                    <!--2ª opção-->
+                </li>
+                <li id="op3" onclick="opcao(3)">
+                    <!--3ª opção-->
+                </li>
+                <li id="op4" onclick="opcao(4)">
+                    <!--4ª opção-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="resultado">
+            <div class="pontuacao">
+                Sua pontução:<span id="pontuacao">0</span>
+            </div>
+            <div class="botao">
+                <button id="botao" onclick="proxima()">Próxima questão</button>
+            </div>
+        </div>
+        <div class="explicacao">
+            <p>
+                Uma breve explicação (sempre busque mais fontes para complementar o conhecimento):
+                <div id="explicacao"></div>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
