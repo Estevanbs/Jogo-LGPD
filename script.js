@@ -111,6 +111,7 @@ function opcao(ele) {
 
 
 function proxima() {
+
     if (perguntaatual < quiz.perguntas.length - 1) {
         perguntaatual++
         load()
@@ -121,9 +122,13 @@ function proxima() {
     }
     else {
         window.location='final.html'
+        final()
     }
 
 }
 
+function final() {
+    window.alert(`Você acertou ${pontuacao / 10} de um total de ${quiz.perguntas.length} questões.`)
 
+}
 

@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-image: url('/img/fundo.jpeg');
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
     padding: 3vh;
     margin: 10px;
     border: none;
-    background-color: rgb(68, 205, 50);
+    background-color: #367588;
     color: white;
     border-radius: 8px;
     font-size: 20px;
@@ -54,7 +54,7 @@ p {
 
 .quiz .pergunta {
     padding: 20px;
-    background-color: rgb(15, 133, 0);
+    background-color: #2a5b69;
     border-radius: 8px;
     color:white;
     font-size: 23px;
@@ -71,7 +71,7 @@ p {
 
 .quiz .opcoes ul li {
     display: inline-block;
-    background-color: rgb(6, 184, 0);
+    background-color: #367588;
     width: 48%;
     padding: 15px;
     border-radius: 8px;
@@ -99,7 +99,7 @@ p {
 .quiz .resultado .botao button {
     padding: 3vh;
     border: none;
-    background-color: rgb(68, 205, 50);
+    background-color: #2a5b69;
     color: white;
     border-radius: 8px;
     font-size: 20px;
@@ -119,8 +119,12 @@ p {
 }
 
 .quiz .resultado .pontuacao span {
-    background-color: rgb(15, 133, 0);
+    background-color: #2a5b69;
     color: white;
     border-radius: 8px;
     padding: 4px;
+}
+
+#explicacao {
+    color: white;
 }
