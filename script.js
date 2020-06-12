@@ -76,6 +76,50 @@ var quiz = {
             ],
             resposta: 4,
             explicacao: 'Segundo a lei 13709/18 o titular de dados precisa ser uma pessoa natural/física.'
+        },
+        {
+            pergunta: 'Quais tipos de dados serão protegidos?',
+            opcoes: [
+                'Todos os dados',
+                'Quase todos os dados',
+                'Dados numéricos',
+                'Nada vai ser protegido'
+            ],
+            resposta: 1,
+            explicacao: 'Todos os dados devem ser protegidos segundo a lei.'
+        },
+        {
+            pergunta: 'Como as pequenas e médias empresas farão para entrar de acordo com a lei?',
+            opcoes: [
+                'Com brainstorming',
+                'Refletindo se a empresa realmente precisa de tudo o que está sendo coletado',
+                'Mapeando as áreas que tem a ver com os dados pessoais dos clientes e melhorando a gestão desses dados',
+                'Não coletar dados'
+            ],
+            resposta: 3,
+            explicacao: 'De acordo com a lei, as empresas terão que melhorar a gestão dos dados pessoais'
+        },
+        {
+            pergunta: 'Como as empresas se adequarão para solicitar consentimentos se tiverem muitos dados?',
+            opcoes: [
+                'Não há o que fazer',
+                'Isso é impossível',
+                'Terão de fazer tudo manualmente',
+                'As empresas deverão utilizar soluções e sistemas para automatizar esse processo'
+            ],
+            resposta: 4,
+            explicacao: 'Vão utilizar soluções viáveis'
+        },
+        {
+            pergunta: 'Qual qual a punição para o tratamento indevido do uso de dados?',
+            opcoes: [
+                'Vai perder a carteira de motorista',
+                'Haverá de aplicação de multas',
+                'Prisão perpétua',
+                'Nenhuma das anteriores'
+            ],
+            resposta: 2,
+            explicacao: 'Terá punições financeiras de até 10% do valor da empresa. E será aplicado uma Multa de R$ 50 milhões às empresas que não se adequarem à LGPD. Antes mesmo das eleições definirem quais serão os novos rumos da economia do país'
         }
     ],
 }
